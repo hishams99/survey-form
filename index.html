@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Survey Form</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="box-1">
+  <h1 id="title">Survey Form</h1></div>
+  <p id="description"> Please fill in the form below</p>
+<form id="survey-form">
+  <div class="form-group ">
+    <label id="name-label"
+           for="name">Name</label>
+    <input
+           type="text"
+           name="name"
+           id="name"
+           class="form-control"
+           placeholder="Enter your name"
+           required/></div>
+  <div class="form-group">
+    <label id="email-label"
+           for="email">Email</label>
+    <input
+           type= "email"
+           name="email"
+           id="email"
+           class="form-control"
+           placeholder="Enter your email"
+           required/></div>
+  <div class="form-group">
+    <label id="number-label" for="number">Age</label>
+    <input
+           type="number"
+           name="age"
+           id="number"
+           min="16"
+           max= "90"
+         class="form-control"
+           placeholder="Age"
+           /></div>
+  <div class="form-group">
+    <p> What's your favourite colour?
+      <select id="dropdown" name="colour" class="form-control" required>
+        <option disabled selected value>Select favourite colour</option><option value="blue">Blue</option><option value="Red"> Red</option><option value="Yellow">Yellow</option><option value="Other">Other</option>
+      </select>
+  </div>
+      <div class="form-group">
+        <p>Would you like to try our developing services?</p>
+        <label>
+          <input
+                 name="answer"
+                 value="Yes"
+                 type="radio"
+                 class="input-radio"
+                 checked
+                 />Yes</label>
+        <input
+               name="answer"
+               value="No"
+               type="radio"
+               class="input-radio"
+               />No</label>
+  <input 
+             name="answer"
+         value="Not sure"
+         type="radio"
+         class="input-radio"
+         />Not sure</label>
+<div class"form-group">
+  <p>
+    In which IT field would you like to work in the future?</p>
+  <select id="which-field" name="whichfield" class="form-control" required> <option disabled selected
+                                          value>Select an option</option>
+    <option value="Web Development">Web Development</option>
+    <option value="Networking">Networking</option>
+    <option value="Cloud Computing">Cloud Computing</option>
+    <option value="Other">Other</option>
+  </select>
+  </div>
+<div class="form-group">
+  <p> Which IT fields do you think are in most demand? <span class="clue">(Check all that apply)</p>
+  <label>
+  <input
+         value:"Cyber Security"
+         type="checkbox"
+         class="input-checkbox"
+         />Cyber Security</label>
+  <label>
+    <input
+           value: "Software Development"
+           type="checkbox"
+         class="input-checkbox"
+         />Software Development</label>
+  <label>
+        <input
+           value: "Cloud Architect"
+           type="checkbox"
+         class="input-checkbox"
+         />Cloud Architect</label>   
+   <label>
+        <input
+           value: "Data Scientist"
+           type="checkbox"
+         class="input-checkbox"
+         />Data Scientist</label>   
+    
+  <div class="form-group">
+    <p>Any recommendations or comments?</p><textarea
+                                             id="comments"
+                                                      class="input-textarea"
+                                                     name="comment"
+                                                     placholder="Enter your comments here..."></textarea>
+  </div>
+  <button type="submit" id="submit" class="submit button">Submit</button>
+  </div>
+<!-- partial -->
+  
+</body>
+</html>
